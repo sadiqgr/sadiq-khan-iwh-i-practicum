@@ -1,0 +1,23 @@
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='/css/style.css')
+  body
+    h1 Pet Dashboard
+    
+    p
+      a(href='/update-cobj') Add/Update table
+    
+    table
+      thead
+        tr
+          th Name
+          th Bio
+          th Breed
+      tbody
+        each item in data
+          tr
+            td= item.properties.name
+            td= item.properties.bio  
+            td= item.properties.breed

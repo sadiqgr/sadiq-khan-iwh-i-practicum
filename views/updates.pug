@@ -1,0 +1,24 @@
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='/css/style.css')
+  body
+    h1 Add New Pet
+    p
+      a(href='/') Return to the homepage
+    
+    form(action='/update-cobj' method='POST')
+      .form-group
+        label(for='name') Name:
+        input(type='text' id='name' name='name' required)
+      
+      .form-group
+        label(for='bio') Bio:
+        input(type='text' id='bio' name='bio')
+      
+      .form-group
+        label(for='breed') Breed:
+        input(type='text' id='breed' name='breed')
+      
+      button(type='submit') Add Pet
