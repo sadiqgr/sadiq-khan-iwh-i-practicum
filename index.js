@@ -42,7 +42,7 @@ app.get('/', async (req, res) => {
 // * Code for Route 2 goes here
 app.get('/update-cobj', (req, res) => {
     res.render('updates', { 
-        title: 'Add New Pet' 
+        title: 'Update Custom Object Form | Integrating With HubSpot I Practicum' 
     });
 });
 
